@@ -21,7 +21,7 @@ int H = 5;
 
     while (a < 5)
     {
-        printf("Direita.");
+        printf("Direita->");
                 
         a++;
     }
@@ -33,7 +33,7 @@ int H = 5;
     }
     for (int i = 0; i < 5; i++)
     {
-      printf("Esquerda.");
+      printf("<-Esquerda");
     }
 
     
