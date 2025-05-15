@@ -17,7 +17,14 @@ int H = 5;
         } while (H != 5);
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+ int a = 0;
 
+    while (a < 5)
+    {
+        printf("Direita.");
+                
+        a++;
+    }
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
