@@ -16,13 +16,13 @@ void MoverBispo(char bisp[20], int movimento, int total) { //Recursiva para o mo
     }
 }
 //MOVIMENTO DA RAINHA
-void MovimentoRainha(char *nome, int contador) { // poderia utilizar o mesmo codigo para movimentar o cavalo L
+void MovimentoRainha(const char *raynha, int contador) { // poderia utilizar o mesmo codigo para movimentar o cavalo L
     if (contador <= 0) {
         return; // Condição de base: quando o contador for 0, a função para
     }
 
-    printf("%s", nome); // Imprime o MOVIMENTO 
-    MovimentoRainha(nome, contador - 1); // Chamada recursiva, reduzindo o contador
+    printf("%s", raynha); // Imprime o MOVIMENTO 
+    MovimentoRainha(raynha, contador - 1); // Chamada recursiva, reduzindo o contador
 }
 
 // Desafio de Xadrez - MateCheck
@@ -100,8 +100,8 @@ int main() {
     MoverBispo(nome, 1, total_vezes);
 
     //MOVIMENTO DA RAINHA
-     char *nome1 = "Baixo\n"; // movimento a ser impresso
-     char *nome2 = "Esquerda "; // movimento a ser impresso
+    const char *nome1 = "Baixo\n"; // movimento a ser impresso
+    const char *nome2 = "Esquerda "; // movimento a ser impresso
 
     
     MovimentoRainha(nome1, 5); // Definição de vezes que o numero sera impresso
