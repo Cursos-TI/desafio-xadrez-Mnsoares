@@ -21,7 +21,7 @@ void MovimentoRainha(char *nome, int contador) { // poderia utilizar o mesmo cod
         return; // Condição de base: quando o contador for 0, a função para
     }
 
-    printf("%s", nome); // Imprime o nome
+    printf("%s", nome); // Imprime o MOVIMENTO 
     MovimentoRainha(nome, contador - 1); // Chamada recursiva, reduzindo o contador
 }
 
