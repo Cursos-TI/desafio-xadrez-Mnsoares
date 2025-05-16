@@ -15,13 +15,15 @@ void MoverBispo(char bisp[20], int movimento, int total) { //Recursiva para o mo
         MoverBispo(bisp, movimento + 1, total);
     }
 }
-//MOVIMENTO DA RAINHA // poderia utilizar o mesmo codigo para movimentar o cavalo L
-void MovimentoRainha(const char * raynha, int contador)  { 
-    if (contador <= 0) {  return;  } // Condição de base: quando o contador for 0, a função para
-  printf("%s", raynha);
- MovimentoRainha(raynha, contador - 1); 
-}
+//MOVIMENTO DA RAINHA
+void MovimentoRainha(const char *raynha, int contador) { // poderia utilizar o mesmo codigo para movimentar o cavalo L
+    if (contador <= 0) {
+        return; // Condição de base: quando o contador for 0, a função para
+    }
 
+    printf("%s", raynha); // Imprime o MOVIMENTO 
+    MovimentoRainha(raynha, contador - 1); // Chamada recursiva, reduzindo o contador
+}
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
