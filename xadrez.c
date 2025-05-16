@@ -20,9 +20,8 @@ void MovimentoRainha(const char *raynha, int contador) { // poderia utilizar o m
     if (contador <= 0) {
         return; // Condição de base: quando o contador for 0, a função para
     }
-
-    printf("%s", raynha); // Imprime o MOVIMENTO 
-    MovimentoRainha(raynha, contador - 1); // Chamada recursiva, reduzindo o contador
+    printf("%s", raynha);
+    MovimentoRainha(raynha, contador - 1);
 }
 
 // Desafio de Xadrez - MateCheck
