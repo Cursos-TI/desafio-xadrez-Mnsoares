@@ -65,7 +65,7 @@ int main() {
     }
     for (int i = 0; i < 5; i++)
     {
-      printf("Esquerda"); //movimento da rainha 5 vezes para esquerda 
+      printf("Esquerda "); //movimento da rainha 5 vezes para esquerda 
     }
 
     printf("\n"); // para gerar espaco entre codigos
