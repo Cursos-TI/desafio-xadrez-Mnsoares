@@ -1,4 +1,5 @@
 #include <stdio.h>
+//MOVIMENTO DA TORRE 
  void MoverTorre (int casas){ //Recursiva para o movimento do Torre nivel mestre
     if (casas > 0)
     {
@@ -7,6 +8,7 @@
     } 
 }
 
+// MOVIMENTO DO BISPO 
 void MoverBispo(char bisp[20], int movimento, int total) { //Recursiva para o movimento do Bispo nivel mestre
     if (movimento <= total) {
         printf("%s\n", bisp);
